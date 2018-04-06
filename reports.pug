@@ -1,0 +1,15 @@
+extends layout.pug
+
+block content
+  .reports
+    h2.title ანგარიშები
+    .wrapper
+      ul.years
+        -for(j=2018; j > 2013; j--)
+          li(class=j==2018 ? 'active' : '')
+            a(href="")=j
+      ul.r
+        -for(i=0; i<12; i++)
+          li <span class="time">დეკემბერი, 2017</span>
+            div სოლიდარობის ფონდის 2017 წლის დეკემბრის თვის ანგარიში
+              a(href="" class="download" download) <i class="fa fa-arrow-circle-down"></i>

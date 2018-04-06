@@ -1,0 +1,67 @@
+doctype
+html
+	head
+		title solidaroba
+		meta(charset="utf-8")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+		link(rel="stylesheet" href="css/owl.carousel.min.css")
+		link(rel="stylesheet" href="css/owl.theme.default.min.css")
+		link(rel="stylesheet" href="css/main.css")
+	body
+		.header
+			.wrapper
+				.top
+					ul.lang ენა:
+						li.active
+							a(href="") ქა
+						li
+							a(href="") en
+					form(action="/search" method="get")
+						input(type="text" name="search" placeholder="ძიება")
+						button(type="submit") <i class="fa fa-search"></i>
+				.bot
+					a(href="/") <img src="images/logo.png">
+					-var menu = [{name: 'მანიფესტი', href: '/', children: [{name: 'რას აკეთებს?', href: '/'},{name: 'ფონდი?', href: '/'}]},{name: 'ანგარიშები',href: '/reports.html'},{name: 'ისტორიები', href: '/histories.html'},{name: 'ბენეფიციარებისთვის', href: '/beneficiars.html'},{name: 'პროდუქცია', href: '/production.html'},{name: 'FAQ', href: '/faq.html'},{name: 'კონტაქტი', href: '/contact.html'}];
+					ul.menu
+						each item in menu
+							li <i class="fa fa-angle-right"></i> <img src="images/menuarrow.png" class="arrow">
+								a(href=item.href)=item.name
+								if(item.children)
+									ul
+										each sub in item.children
+											li
+												a(href="")=sub.name
+		block content
+		.footer
+			.partners
+				h2 პარტნიორები
+				.wrapper
+					-var partners = [{img: 'images/partner1.png'},{img: 'images/partner2.png'},{img: 'images/partner3.png'},{img: 'images/partner4.png'},{img: '/images/partner5.png'},{img: 'images/partner6.png'}]
+					.carusel
+						button.prev <i class="fa fa-angle-left"></i>
+						#partnerSlider.owl-carousel.owl-theme
+							each partner in partners
+								.item
+									a(href="")
+										img(src=partner.img)
+						button.next <i class="fa fa-angle-right"></i>
+			.info
+				.wrapper
+					ul.address
+						li <i class="fa fa-map-marker"></i> საქართველო, თბილისი, 0114, ინგოროყვას ქ. 7
+						li <i class="fa fa-envelope"></i> 
+							a(href="mailto: solidarity@gov.ge") solidarity@gov.ge
+						li <i class="fa fa-phone"></i> (995) 322 99 09 00 (2015)
+					ul.menu
+						-var menu = [{name: 'მანიფესტი'}, {name: 'ისტორიები'},{name: 'ბენეფიციარებისთვის'},{name: 'პროდუქცია'},{name: 'FAQ'},{name: 'კონტაქტი'}];
+						each item in menu
+							li
+								a(href="")=item.name
+					.soc
+						a(href="" class="fb") <i class="fa fa-facebook-f"></i>
+					.upscroll <i class="fa fa-angle-up"></i>
+			.copy
+				.wrapper სოლიდარობა &copy; ყველა უფლება დაცულია. 2018
+		script(src="js/jquery-3.3.1.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/main.js")

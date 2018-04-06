@@ -1,0 +1,41 @@
+extends layout.pug
+
+block content
+  .historyinner
+    .popupgalery
+      .controls
+        .prev.sbtn <img src="images/prevslide.png">
+        .next.sbtn <img src="images/nextslide.png">
+        .close <img src="images/closeslide.png">
+      .owl-carousel.owl-theme#popupcarousel
+        -for(i=0; i < 12; i++)
+          .item(style="background-image: url('images/slide.jpg')")
+    h2.title ისტორიები
+    .wrapper
+      a.back(href="/histories.html") <i class="fa fa-arrow-left"></i> უკან დაბრუნება
+      .content
+        .l
+          .img(style="background-image: url('images/asdasd.png')")
+          ul
+            li.photo <i class="fa fa-camera"></i>
+            li.video <i class="fa fa-play"></i>
+            li.fb <a href=""><i class="fa fa-facebook-f"></i></a>
+        .desc
+          h3 ნერგაძე გიორგი
+          h4 4 წლის
+          .text
+            p დღეს სოლიდარობის ფონდში 100-მდე კერძო კომპანია, 700-ზე მეტი საჯარო უწყება და 200 000 ადამიანია ჩართული. ყოველი ერთით მეტი დონორი ჩვენ გვაძლიერებს, ფონდში 100-მდე კერძო კომპანია, 700-ზე მეტი საჯარო უწყება და 200 000 ადამიანია ჩართული. ყოველი ერთით მეტი დონორი ჩვენ გვაძლიერებს.
+            p დღეს სოლიდარობის ფონდში 100-მდე კერძო კომპანია, 700-ზე მეტი საჯარო უწყება და 200 000 ადამიანია ჩართული. ყოველი ერთით მეტი დონორი ჩვენ გვაძლიერებს, <br>ფონდში 100-მდე კერძო კომპანია, 700-ზე მეტი საჯარო უწყება და 200 000 ადამიანია ჩართული. ყოველი ერთით მეტი დონორი ჩვენ გვაძლიერებსდღეს სოლიდარობის ფონდში 100-მდე კერძო კომპანია, ყოველი ერთით მეტი დონორი ჩვენ გვაძლიერებს,<br> კერძო კომპანია, 700-ზე მეტი საჯარო უწყება და 200 000 ადამიანია ჩართული. ყოველი ერთით მეტი დონორი ჩვენ გვაძლიერებს.
+            p დღეს სოლიდარობის ფონდში 100-მდე კერძო კომპანია, 700-ზე მეტი საჯარო უწყება და 200 000 ადამიანია ჩართული.
+  .history
+    h2 ისტორიები
+    .wrapper
+      -var history = [{name: 'ალექსანდრე ლორთქიფანიშვილი', img: 'images/asdasd.png'},{name: 'ალექსანდრე ლორთქიფანიშვილი', img: 'images/asdasd.png'},{name: 'ალექსანდრე ლორთქიფანიშვილი', img: 'images/asdasd.png'},{name: 'ალექსანდრე ლორთქიფანიშვილი', img: 'images/asdasd.png'},{name: 'ალექსანდრე ლორთქიფანიშვილი', img: 'images/asdasd.png'}]
+      ul
+        each item in history
+          li
+            .img(style="background-image: url('"+item.img+"')")
+            h3
+              a(href="/history")=item.name
+      a(href="" class="more") სხვა ისტორიები    
+    

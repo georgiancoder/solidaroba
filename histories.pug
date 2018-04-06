@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+  .histories
+    h2.title ისტორიები
+    .wrapper
+      -for(i=0; i<12; i++)
+        .h
+          .img(style="background-image: url('../images/asdasd.png')")
+            .hover
+              h3 <span>4</span> წლის
+          h2 <a href="/historyinner.html">ალექსანდრე ლორთქიფანიშვილი</a>
+    ul.pagination
+      li.prev <a href=""> <img src="images/paginationprev.png"> </a>
+      li.current <a href="">1</a>
+      li <a href="">2</a>
+      li <a href="">3</a>
+      li.next <a href=""> <img src="images/paginationnext.png"> </a>

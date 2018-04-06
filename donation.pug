@@ -1,0 +1,104 @@
+extends layout.pug
+
+block content
+  
+  .donation
+    h2.title თანხმობის ფორმა ყოველთვიურ მიკრო დონაციაზე
+    h3 დონაციის ტიპი
+    form
+      ul.radio
+        li
+          input(type="radio" id="ertjeradi" name="donatetype")
+          label(for="ertjeradi") <div style="background-image: url('images/ertjeradi.png')"></div> ერთჯერადი
+        li
+          input(type="radio" id="yoveltviuri" name="donatetype")
+          label(for="yoveltviuri") <div style="background-image: url('images/yoveltviuri.png')"></div> ყოველთვიური
+      .person
+        ul.radio
+          li
+            input(type="radio" name="person" value="fizikuri" id="fizikuri")
+            label(for="fizikuri") <div style="background-image: url('images/fizpiri.png')"></div> ფიზიკური პირი
+          li
+            input(type="radio" name="person" value="iuridiuli" id="iuridiuli")
+            label(for="iuridiuli") <div style="background-image: url('images/iurpiri.png')"></div> იურიდიული პირი
+          li
+            input(type="radio" name="person" value="sajaro" id="sajaro")
+            label(for="sajaro") <div style="background-image: url('images/sajaro.png')"></div> საჯარო უწყება
+      .wrapper
+        .inputs
+        h4 ყოველთვიური შემოქმედების თანხა
+      .amount
+        .wrapper
+          ul.d
+            li
+              input(type="radio" name="amount" value="1" id="gel1")
+              label(for="gel1") <div><span class="number">1</span> <span class="gel">₾</span></div>
+            li
+              input(type="radio" name="amount" value="10" id="gel10")
+              label(for="gel10") <div><span class="number">10</span> <span class="gel">₾</span></div>
+            li
+              input(type="radio" name="amount" value="100" id="gel100")
+              label(for="gel100") <div><span class="number">100</span> <span class="gel">₾</span></div>
+            li
+              input(type="radio" name="amount" class="customamount" value="" id="customamount")
+              label(for="customamount") <div><input type="text" name="customamount" disabled> <span class="customamount">სხვა თანხა</span></div>
+          h4.b ყოველი ერთით მეტი დონორი გვაძლიერებს
+          ul.terms
+            li ვადასტურებ, რომ ვიცნობ საქართველოს სოლიდარობის ფონდის მიზნებს და თანახმა ვარ, ყოველთვიურად ჩემი თანამდებობრივი სარგოდან ფონდში გადაირიცხოს ზემოთ აღნიშნული თანხა. 
+            li ვაცნობიერებ, რომ ჩემი მონაწილეობა, სოლიდარობის ფონდისთვის თანხის მობილიზებაში ნებაყოფლობითია, რომელიც ნებისმიერ დროს შემიძლია შევწყვიტო ხელმძღვანელობისა, თუ სხვა პირებისთვის წინასწარი შეტყობინების და მიზეზის განმარტების გარეშე.
+            li მესმის, რომ ჩემი კარიერული, თუ სხვა მიზნების სასარგებლოდ/საწინააღმდეგოდ არ იმოქმედებს, ჩემს მიერ საქართველოს სოლიდარობის ფონდში განხორციელებული დონაცია/მისი მოცულობა.
+            li სრულად ვიზიარებს, ჩემს წილ სოციალურ პასუხისმგებლობას საზოგადოების წინაშე და მიკრო-დონაციის განხორციელებით ჩემი წვლილი შემაქვს ონკოლოგიის წინააღმდეგ ბრძოლაში. 
+          input(type="checkbox" name="terms" id="terms")
+          label(for="terms") ვეთანხმები წესებს
+          button(type="submit") გაგზავნა
+  script.
+    window.onload = function(){
+      var lng = 'ka';
+  
+      var data = {
+      ka: {
+        fizikuri: {
+           inputs: '<div class="input"><label>სახელი დაგვარი *</label><input type="text" name="fullname" ></div>\
+                    <div class="input"><label>ელ. ფოსტა *</label><input type="text" name="email"></div>\
+                    <div class="input"><label>პირადი ნომერი *</label><input type="text" name="pn"></div>\
+                    <div class="input"><label>საკონტაქტო ტელეფონი</label><input type="text" name="phone"></div>',
+            
+        },
+        iuridiuli: {
+          inputs: '<div class="input"><label>იურიდიული პირის დასახელება *</label><input type="text" name="legalname" placeholder="შპს.სსიპ, აიპ.." ></div>\
+                    <div class="input"><label>საიდენტიფიკაციო კოდი *</label><input type="text" name="indetification"></div>\
+                    <div class="input"><label>ელ. ფოსტა *</label><input type="text" name="email"></div>\
+                    <div class="input"><label>იურიდიული პირის დასახელება *</label><input type="text" name="indetification"></div>\
+                    <div class="input"><label>საკონტაქტო პირი *</label><input type="text" name="contactperson"></div>\
+                    <div class="input"><label>საკონტაქტო ტელეფონი</label><input type="text" name="phone"></div>',
+        },
+        sajaro: {
+              inputs: '<div class="input"><label>საჯარო უწყების დასახელება *</label><input type="text" name="publicname" placeholder="შპს.სსიპ, აიპ.."></div>\
+                    <div class="input"><label>ელ. ფოსტა *</label><input type="text" name="email"></div>\
+                    <div class="input"><label>საკონტაქტო პირი *</label><input type="text" name="contactperson"></div>\
+                    <div class="input"><label>საკონტაქტო ტელეფონი *</label><input type="text" name="phone"></div>',
+        }
+      },
+      en: {},
+      ru: {}
+      }
+  
+      $(".inputs").html(data[lng].fizikuri.inputs);
+  
+      $(".person input[type=radio]").click(function(){
+      $(".inputs").html(data[lng][$(this).val()].inputs);
+        if($(this).val() == 'iuridiuli'){
+          $(".inputs").addClass('wide');
+        }else{
+          $(".inputs").removeClass('wide');
+        }
+      });
+      
+      $("input[name='amount']").click(function(){
+        if($(this).hasClass('customamount')){
+          $("input[name='customamount']").removeAttr('disabled');
+        }else{
+          $("input[name='customamount']").attr('disabled','disabled');
+        }
+      });
+    }

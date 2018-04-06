@@ -1,0 +1,124 @@
+extends layout.pug
+
+block content
+  
+  .beneficiars
+    h2.title ბენეფიციარებისთვის
+    form
+      .info1
+        .wrapper
+          ul.inputs
+            li
+              label განმცხადებელი (სახელი, გვარი)*
+              input(type="text" placeholder="სახელი, გვარი")
+            li
+              label მცხოვრები (ქალაქი, მისამართი)*
+              input(type="text" placeholder="ქალაქი, მისამართი")
+            li
+              label მოთხოვნილი სამედიცინო სერვისი*
+              input(type="text" placeholder="სერვისი")
+            li
+              label ბენეფიციარი (სახელი, გვარი)*
+              input(type="text" placeholder="სახელი, გვარი")
+            li
+              label საკონტაქტო ინფორმაცია*
+              input(type="text" placeholder="ტელ./ელ-ფოსტა")
+            li
+              label განცხადების თარიღი*
+              .selectWrapper
+                select
+                  -for(i=1; i<=31; i++)
+                    option=i
+                select
+                  option სექტემბერი
+                select
+                  -for(i=2018; i>1990; i--)
+                    option=i
+      .info2
+        .wrapper
+          ul.inputs
+            li
+              label ერთ-ერთი მშობლის ან კანონიერი წარმომადგენლის სახელი და გვარი * 
+              input(type="text" placeholder="გთხოვთ შეავსოთ...")
+            li
+              label ერთ-ერთი მშობლის ან კანონიერი წარმომადგენლის საკონტაქტო ტელეფონი 
+              input(type="text" placeholder="გთხოვთ შეავსოთ...")
+            li
+              label განმცხადებლის საკონტაქტო ტელეფონი *
+              input(type="text" placeholder="გთხოვთ შეავსოთ...")
+            li
+              label განმცხადებლის ელ-ფოსტა *
+              input(type="text" placeholder="გთხოვთ შეავსოთ...")
+      .uploads
+        .wrapper
+          h2 გთხოვთ ატვირთოთ დოკუმენტები
+          ul.documents
+            li
+              input(type="file" id="piradoba1")
+              label(for="piradoba1")
+                img(src="images/piradobismowmoba.png")
+                p ბენეფიციარის პირადობის დამადასტურებელი საბუთი * 
+                img(src="images/upload.png")
+                h2 ატვირთვა
+              p.inf პირადობის ასლი, დაბადების მოწმობა, პასპორტი
+            li
+              input(type="file" id="piradoba1")
+              label(for="piradoba1")
+                img(src="images/gancxadeba.png")
+                p ბენეფიციარის ჯანმრთელობის ცნობა* 
+                img(src="images/upload.png")
+                h2 ატვირთვა
+              p.inf (ფორმა 100), რომელშიც მითითებულია დიაგნოზი და რეკომენდირებული სამკურნალო-დიაგნოსტიკური ღონისძიებები
+            li
+              input(type="file" id="piradoba1")
+              label(for="piradoba1")
+                img(src="images/gancxadeba.png")
+                p რეკომენდებული სამკურნალო-დიაგნოსტიკური ღონისძიების ხარჯთაღრიცხვა 
+                img(src="images/upload.png")
+                h2 ატვირთვა
+              p.inf (ანგარიშფაქტურა, ინვოისი) შესაბამისი ორგანიზაციის (კლინიკის) ოფიციალური ბეჭდითა და ხელმოწერით დამოწმებული 
+            li
+              input(type="file" id="piradoba1")
+              label(for="piradoba1")
+                img(src="images/piradoba2.png")
+                p მშობლ(ებ)ის ან კანონიერი წარმომადგენლის პირადობის დამადასტურებელი საბუთი
+                img(src="images/upload.png")
+                h2 ატვირთვა
+              p.inf 18-წლამდე ასაკის ბენეფიციარის შემთხვევაში 
+            li
+              input(type="file" id="piradoba1")
+              label(for="piradoba1")
+                img(src="images/cnoba.png")
+                p ჯანდაცვის სამინისტროს ექსპერტის ცნობა
+                img(src="images/upload.png")
+                h2 ატვირთვა
+              p.inf საზღვარგარეთ დიაგნოსტიკისა და/ან მკურნალობის დაფინანსების მოთხოვნის შემთხვევაში, აღნიშნული სამედიცინო სერვისის საზღვარგარეთ ჩატარების მიზანშეწონილობის შესახებ
+            li
+              input(type="file" id="piradoba1")
+              label(for="piradoba1")
+                img(src="images/cnoba.png")
+                p ბენეფიციარის სოციალური სტატუსის დამადასტურებელი დოკუმენტი 
+                img(src="images/upload.png")
+                h2 ატვირთვა
+              p.inf სოციალური სტატუსის მქონე ბენეფიციართა შემთხვევაში
+            li
+              input(type="file" id="piradoba1")
+              label(for="piradoba1")
+                img(src="images/cnoba.png")
+                p ცნობა/წერილი მოპოვებული დაფინანსების შესახებ
+                img(src="images/upload.png")
+                h2 ატვირთვა
+              p.inf ჯანდაცვის სამინისტრო, ადგილობრივი მუნიციპალიტეტი მოქმედი ფონდებიდან და სხვა, აღნიშნული სამედიცინო სერვისისთვის მოპოვებული დაფინანსების შესახებ (თანხმობა ან უარი)
+          .terms
+            .info საქართველოს სოლიდარობის ფონდი განიხილავს განცხადებებს 21 წლის ასაკის ჩათვლით როგორც სოლიდური სიმსივნეების ასევე ონკოჰემატოლოგიური დაავადებების მქონე ბავშვებისა და ახალგაზრდების დასახმარებლად.<br><br> განცხადებები თანდართული დოკუმენტაციით მიიღება საქართველოს მთავრობის ადმინისტრაციის კანცელარიის საშუალებით.
+              ul.addr
+                li <img src="images/addr.png"> <span class="label">მისამართი:</span> თბილისი, ინგოროყვას ქ. #7
+                li <img src="images/mail.png"> <span class="label">ელ-ფოსტა:</span> solidarity@geo.gov.ge
+            .accept
+              input(type="checkbox" id="photovideo")
+              label(for="photovideo") ვაცხადებ თანხმობას ბენეფიციარის ფოტო/ვიდეო/აუდიო მასალა, ა(ა)იპ საქართველოს სოლიდარობის ფონდმა გამოიყენოს საზოგადოების ინფორმირებისა და ცნობადობის ამაღლების მიზნით 
+              input(type="checkbox" id="iaccept")
+              label(for="iaccept") * გავეცანი პირობებს და ვეთანხმები
+          button(type="submit") გაგზავნა
+              
+              

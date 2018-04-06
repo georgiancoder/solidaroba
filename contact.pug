@@ -1,0 +1,40 @@
+extends layout.pug
+
+block content
+  .contact
+    h2.title კონტაქტი
+    .wrapper
+      form
+        .name
+          label თქვენი სახელი, გვარი
+          input(type="text" name="name")
+        .theme
+          label თემა
+          input(type="text" name="theme")
+        .msg
+          label გზავნილი
+          textarea(name="msg")
+        input(type="submit" value="გაგზავნა")
+      ul.address
+        li <i class="fa fa-map-marker"></i> საქართველო, თბილისი, 0114, ინგოროყვას ქ. 7
+        li <i class="fa fa-envelope"></i> 
+          a(href="mailto: solidarity@gov.ge") solidarity@gov.ge
+        li <i class="fa fa-phone"></i> (995) 322 99 09 00 (2015)
+    #map
+
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAakmwZTjhAbhFV_CGj3uXAsaD6127iGsE&language=ka&callback=initMap"
+    async defer)
+  script.
+    var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 41.6943015, lng: 44.7953608},
+          zoom: 16,
+          disableDefaultUI: true
+        });
+        var marker = new google.maps.Marker({
+            position: {lat: 41.6943015, lng: 44.7953608},
+            icon:'/images/pin.png'
+          });
+          marker.setMap(map);
+      }

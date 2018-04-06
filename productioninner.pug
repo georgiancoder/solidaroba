@@ -1,0 +1,43 @@
+extends layout.pug
+
+block content
+  .product
+    h2.title პროდუქცია
+    .wrapper
+      a.back(href="/production.html") <i class="fa fa-arrow-left"></i> უკან დაბრუნება
+      .content
+        .slider
+          #productInnerSlider.owl-carousel.owl-theme
+            -for(i=0; i<5; i++)
+              .item(style="background-image: url('images/product.jpg')")
+        .desc
+          .top
+            h3 სოლიდარობის ბორჯომი
+            h4 26 <span class='gel'>₾</span>
+            .text მე თანხმობას ვაცხადებ ნებაყოფლობით, ზემოთ აღნიშნული თანხის ყოველთვიურად გადარიცხვაზე ,,საქართველოს სოლიდარობის ფონდში“. ჩემთვის გასაგებია და მისაღები, რომ ჩემი მონაწილეობა სოლიდარობის ფონდისთვის თანხების მოძიებაში არის ნებაყოფლობითი და ნებისმიერ დროს ჩემი ხელმძღვანელისთვის წინასწარი შეტყობინების გარეშე შემიძლია თანხის გადარიცხვის.
+          .buy
+            p პროდუქცია შეგიძლიატ შეიძინოთ შემდეგ მაღაზიებსა და ობიექტებში
+            ul.markets
+              li
+                a(href="")
+                  img(src="images/karfur.jpg")
+              li
+                a(href="")
+                  img(src="images/goodwil.jpg")
+              li
+                a(href="")
+                  img(src="images/nikora.jpg")
+              li
+                a(href="")
+                  img(src="images/smart.jpg")
+    .sameproducts
+      h2.title მსგავსი პროდუქცია
+      .wrapper
+        -var products = [{name: 'ბორჯომი',img: 'images/product.jpg',price: '1.20₾'},{name: 'თერმოჭიქა',img: 'images/product.jpg',price: '11₾'},{name: 'გულსაბნევი',img: 'images/product.jpg',price: '2₾'},{name: 'ჩანთა',img: 'images/product.jpg',price: '18₾'},{name: 'ბორჯომი',img: 'images/product.jpg',price: '1.20₾'}]
+        ul
+          each product in products
+            li
+              .img(style="background-image: url('"+product.img+"')")
+              a(href='')=product.name
+                span.price=product.price
+        a(href="" class="more") სხვა ისტორიები    

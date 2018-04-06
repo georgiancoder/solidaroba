@@ -1,0 +1,31 @@
+extends layout.pug
+
+block content
+
+  .production
+    h2.title პროდუქცია
+    .wrapper
+      .filters
+        h3 დალაგება:
+        ul
+          li.active 
+            a(href="") ⇅ თარიღი
+          li 
+            a(href="") ⇅ პოპულარული
+          li 
+            a(href="") ⇅ ფასი
+        h3 კატეგორია:
+        ul
+          li.active 
+            a(href="") ⇅ ტანსაცმელი
+          li 
+            a(href="") ⇅ აქსესუარები
+          li 
+            a(href="") ⇅ სხვადასხვა
+      ul.content
+        -for(i=0; i<16; i++)
+          li
+            .img(style="background-image: url('images/product.jpg')")
+            h2 
+              a(href="/productioninner.html") თერმოჭიქა
+                span 11 ₾
