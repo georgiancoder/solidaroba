@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'BPG GEL';
+    src: url('../fonts/BPGGEL.eot');
+    src: url('../fonts/BPGGEL.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BPGGEL.woff') format('woff'),
+        url('../fonts/BPGGEL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto _GEO Mt';
+	src: url('../fonts/Roboto_GEOMt.eot');
+	src: url('../fonts/Roboto_GEOMt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto_GEOMt.woff') format('woff'),
+		url('../fonts/Roboto_GEOMt.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto _GEO Nus';
+	src: url('../fonts/Roboto_GEONus.eot');
+	src: url('../fonts/Roboto_GEONus.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto_GEONus.woff') format('woff'),
+		url('../fonts/Roboto_GEONus.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

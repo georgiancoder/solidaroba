@@ -40,6 +40,10 @@ a {
   margin: auto;
 }
 
+h2.title{
+  font-family: 'Roboto _GEO Mt';
+}
+
 body{
   & > .header{
     height: 170px;
@@ -48,6 +52,7 @@ body{
       padding-top: 13px;
       display: flex;
       justify-content: flex-end;
+      font-family: "Roboto _GEO Mt";
       .lang{
         display: flex;
         align-items: center;
@@ -72,6 +77,7 @@ body{
           border: 1px solid #FFF;
           width: 100%;
           background-color: rgba(255,255,255,0.25);
+          font-family: "Roboto _GEO Mt";
         }
         button{
           height: 36px;
@@ -89,6 +95,7 @@ body{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-family: "Roboto _GEO Mt";
       ul.menu{
         display: flex;
         align-items: center;
@@ -96,7 +103,7 @@ body{
         color: #333333;
         &>li{
           position: relative;
-          margin-left: 55px;
+          margin-left: 45px;
           &.active, &:hover{
             & > a{
               color: #FFF;
@@ -129,7 +136,7 @@ body{
     }
   }
   & > .bigbanner{
-    background-image: url('../images/whiterainbow.png');
+    background-image: url('../images/balgi.png');
     background-repeat: no-repeat;
     background-position: right bottom;
     background-color: #fbba00;
@@ -145,12 +152,14 @@ body{
         font-size: 207px;
         line-height: 207px;
         color: #434242;
+        font-family: 'Roboto _GEO Mt';
       }
       h3{
         font-size: 71px;
         line-height: 70px;
         color: #FFF;
         width: 50%;
+        font-family: 'Roboto _GEO Mt';
       }
     }
   }
@@ -169,11 +178,17 @@ body{
         padding-left: 65px;
         span{
           color: #fbba00;
+          font-family: 'Roboto _GEO Mt';
+          font-size: 34px;
         }
         p{
           font-size: 16px;
           color: #FFF;
           width: 220px;
+          font-family: "Roboto _GEO Mt";
+          span{
+            font-size: 16px;
+          }
         }
         .srch{
           margin-left: 10px;
@@ -216,6 +231,7 @@ body{
         font-size: 30px;
         color: #3c5266;
         text-align: center;
+        font-family: "Roboto _GEO Mt";
       }
       ul{
         li{
@@ -262,6 +278,7 @@ body{
               color: #fbba00;
               margin-right: 30px;
               text-align: right;
+              font-family: 'Roboto _GEO Mt';
               span{
                 font-size: 40px;
                 line-height: 40px;
@@ -273,6 +290,7 @@ body{
               width: 640px;
               font-size: 15px;
               color: #333333;
+              font-family: 'Roboto _GEO Nus';
             }
           }
         }
@@ -282,6 +300,7 @@ body{
   & > .history{
     border-top: 1px solid #cccccc;
     position: relative;
+    font-family: "Roboto _GEO Mt";
     & > h2{
       position: absolute;
       left: 50%;
@@ -338,12 +357,14 @@ body{
         font-size: 22px;
         color: #FFF;
         text-align: center;
+        font-family: "Roboto _GEO Mt";
       }
       p{
         font-size: 15px;
         color: #FFF;
         text-align: center;
         margin-top: 20px;
+        font-family: 'Roboto _GEO Nus';
       }
       .carousel{
         height: 260px;
@@ -377,6 +398,7 @@ body{
             a{
               margin-top: 22px;
               display: block;
+              font-family: "Roboto _GEO Mt";
               span{
                 display: block;
               }
@@ -397,6 +419,7 @@ body{
         border-radius: 17px;
         margin-left: 50%;
         transform: translateX(-50%);
+        font-family: "Roboto _GEO Mt";
       }
     }
   }
@@ -420,12 +443,14 @@ body{
         font-size: 30px;
         text-align: center;
         color: #3c5266;
+        font-family: "Roboto _GEO Mt";
       }
       .txt{
         padding: 60px 290px;
         font-size: 17px;
         color: #333333;
         text-align: center;
+        font-family: 'Roboto _GEO Nus';
       }
       a.ganacxadi{
         margin-top: 60px;
@@ -495,6 +520,7 @@ body{
             display: block;
             padding-left: 25px;
             margin-bottom: 10px;
+            font-family: 'Roboto _GEO Mt';
           }
           div{
             position: relative;
@@ -508,6 +534,7 @@ body{
             padding-right: 140px;
             display: flex;
             align-items: center;
+            font-family: 'Roboto _GEO Nus';
             a.download{
               display: block;
               position: absolute;
@@ -530,6 +557,7 @@ body{
         align-items: center;
         justify-content: center;
         margin-bottom: 30px;
+        font-family: 'Roboto _GEO Mt';
         li{
           height: 35px;
           font-size: 17px;
@@ -567,6 +595,7 @@ body{
       .h{
         width: 225px;
         margin-bottom: 60px;
+        font-family: 'Roboto _GEO Mt';
         @include marginCounter(1280px,225px,4);
         &:hover{
           .img{
@@ -622,6 +651,7 @@ body{
       }
     }
     .pagination{
+      font-family: 'Roboto _GEO Mt';
       display: inline-flex;
       align-items: center;
       margin-left: 50%;
@@ -736,6 +766,7 @@ body{
         transform: translateX(-50%);
         font-size: 15px;
         color: #999999;
+        font-family: 'Roboto _GEO Mt';
         i{
           display: block;
           text-align: center;
@@ -791,17 +822,20 @@ body{
           h3{
             font-size: 30px;
             color: #3c5266;
+            font-family: 'Roboto _GEO Mt';
           }
           h4{
             margin-top: 25px;
             font-size: 15px;
             color: #666666;
+            font-family: 'Roboto _GEO Mt';
           }
           .text{
             font-size: 15px;
             color: #666666;
             p{
               margin-top: 25px;
+              font-family: 'Roboto _GEO Nus';
             }
           }
         }
@@ -825,6 +859,7 @@ body{
       ul{
         margin: auto;
         width: 725px;
+        font-family: 'Roboto _GEO Nus';
         li{
           cursor: pointer;
           &.open{
@@ -918,6 +953,7 @@ body{
           border: 1px solid #d3d3d3;
           border-radius: 24px;
           padding: 0 25px;
+          font-family: 'Roboto _GEO Nus';
         }
         textarea{
           width: 100%;
@@ -926,12 +962,14 @@ body{
           border-radius: 15px;
           resize: none;
           padding: 25px;
+          font-family: 'Roboto _GEO Nus';
         }
         label{
           font-size: 15px;
           color: #666666;
           display: block;
           margin-bottom: 10px;
+          font-family: 'Roboto _GEO Nus';
         }
         .name{
           width: 50%;
@@ -956,6 +994,7 @@ body{
           transform: translateX(-50%);
           font-size: 25px;
           color: #434242;
+          font-family: 'Roboto _GEO Mt';
           &:hover{
             background-color: darken(#fbba00, 10%);
           }
@@ -965,6 +1004,7 @@ body{
         margin-top: 70px;
         display: flex;
         justify-content: center;
+        font-family: 'Roboto _GEO Mt';
         li{
           margin: 0 25px;
           font-size: 17px;
@@ -998,6 +1038,7 @@ body{
       padding: 60px 40px;
       display: flex;
       .filters{
+        font-family: 'Roboto _GEO Mt';
         width: 160px;
         h3{
           font-size: 17px;
@@ -1020,6 +1061,7 @@ body{
         padding-left: 35px;
         display: flex;
         flex-wrap: wrap;
+        font-family: 'Roboto _GEO Mt';
         li{
           width: 195px;
           @include marginCounter(1095px,195px,4);
@@ -1070,6 +1112,7 @@ body{
         transform: translateX(-50%);
         font-size: 15px;
         color: #999999;
+        font-family: 'Roboto _GEO Mt';
         i{
           display: block;
           text-align: center;
@@ -1124,21 +1167,25 @@ body{
           h3{
             font-size: 30px;
             color: #333333;
+            font-family: 'Roboto _GEO Mt';
           }
           h4{
-            margin-top: 25px;
+            margin-top: 20px;
             font-size: 50px;
             color: #fbba00;
+            font-family: 'Roboto _GEO Mt';
           }
           .text{
             font-size: 15px;
             color: #666666;
-            margin-top: 30px;
+            margin-top: 20px;
+            font-family: 'Roboto _GEO Nus';
           }
 
           .buy{
             font-size: 13px;
             color: #666666;
+            font-family: 'Roboto _GEO Nus';
             .markets{
               display: flex;
               flex-wrap: wrap;
@@ -1169,13 +1216,20 @@ body{
       margin-top: 160px;
       margin-bottom: 100px;
       border-top: 1px solid #cccccc;
+      font-family: 'Roboto _GEO Mt';
+      text-align: center;
+      .title{
+        transform: translateY(-50%);
+        margin-left: auto;
+      }
         .wrapper {
           ul {
             padding: 0 40px;
             display: flex;
+            flex-wrap: wrap;
             margin-top: 50px;
             li {
-              @include marginCounter(1290px,190px,5);
+              @include marginCounter(1210px,190px,5);
               text-align: center;
               .img {
                 width: 190px;
@@ -1209,8 +1263,6 @@ body{
             background-color: #96a7b1;
             color: #FFF;
             font-size: 13px;
-            margin-left: 50%;
-            transform: translateX(-50%);
             margin-top: 60px;
             border-radius: 17px;
           }
@@ -1235,6 +1287,7 @@ body{
         font-size: 23px;
         color: #666666;
         margin-top: 80px;
+        font-family: 'Roboto _GEO Mt';
   		}
 
   		form {
@@ -1255,6 +1308,7 @@ body{
                 display: flex;
                 align-items: center;
                 cursor: pointer;
+                font-family: 'Roboto _GEO Mt';
     						div {
                   width: 65px;
                   height: 65px;
@@ -1289,6 +1343,7 @@ body{
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
+          font-family: 'Roboto _GEO Nus';
           &.wide{
             .input{
               margin: 0 20px;
@@ -1311,6 +1366,7 @@ body{
                 padding: 0 20px;
                 font-size: 13px;
                 color: #999999;
+                font-family: 'Roboto _GEO Nus';
               }
             }
   			}
@@ -1318,6 +1374,7 @@ body{
   			h4 {
           font-size: 23px;
           color: #666666;
+          font-family: 'Roboto _GEO Mt';
           &.b{
             color: #3c5266;
           }
@@ -1351,6 +1408,7 @@ body{
                 &+label {
                   position: relative;
                   cursor: pointer;
+                  font-family: 'Roboto _GEO Mt';
                   &::after{
                     content: '';
                     width: 25px;
@@ -1391,6 +1449,7 @@ body{
                     .customamount{
                       font-size: 15px;
                       color: #666666;
+                      font-family: 'Roboto _GEO Nus';
                     }
                   }
       					}
@@ -1402,6 +1461,7 @@ body{
   			.terms {
           width: 830px;
           margin-top: 30px;
+          font-family: 'Roboto _GEO Nus';
   				li {
             margin-bottom: 15px;
             font-size: 15px;
@@ -1430,6 +1490,7 @@ body{
             margin-left: 20px;
             font-size: 15px;
             color: #999999;
+            font-family: 'Roboto _GEO Nus';
             cursor: pointer;
             &::before{
               content: '';
@@ -1460,6 +1521,7 @@ body{
           font-size: 25px;
           color: #434242;
           background-color: #fbba00;
+          font-family: 'Roboto _GEO Mt';
   			}
   		}
   }
@@ -1493,6 +1555,7 @@ body{
                 font-size: 15px;
                 color: #666666;
                 margin-bottom: 10px;
+                font-family: 'Roboto _GEO Nus';
   						}
   						input {
                 width: 100%;
@@ -1502,6 +1565,7 @@ body{
                 padding: 0 25px;
                 font-size: 13px;
                 color: #666666;
+                font-family: 'Roboto _GEO Mt';
   						}
               .selectWrapper{
                 width: 100%;
@@ -1517,6 +1581,7 @@ body{
                   border-right: 1px solid #cccccc;
                   font-size: 15px;
                   color: #cccccc;
+                  font-family: 'Roboto _GEO Mt';
                 }
               }
   					}
@@ -1539,6 +1604,7 @@ body{
                 font-size: 15px;
                 color: #666666;
                 margin-bottom: 10px;
+                font-family: 'Roboto _GEO Nus';
   						}
               input {
                 width: 100%;
@@ -1548,6 +1614,7 @@ body{
                 padding: 0 25px;
                 font-size: 13px;
                 color: #666666;
+                font-family: 'Roboto _GEO Mt';
               }
   					}
   				}
@@ -1562,6 +1629,7 @@ body{
             font-size: 23px;
             color: #666666;
             text-align: center;
+            font-family: 'Roboto _GEO Mt';
   				}
   				.documents {
             margin-top: 65px;
@@ -1597,6 +1665,7 @@ body{
                     margin-top: 10px;
                     padding: 0 10px;
                     height: 55px;
+                    font-family: 'Roboto _GEO Nus';
     							}
 
     							h2 {
@@ -1612,6 +1681,7 @@ body{
               font-size: 13px;
               color: #b0b0b0;
               margin-top: 15px;
+              font-family: 'Roboto _GEO Nus';
   					}
   				}
   				.terms {
@@ -1619,6 +1689,7 @@ body{
             display: flex;
             justify-content: space-between;
             text-align: left;
+            font-family: 'Roboto _GEO Nus';
   					.info {
               width: 675px;
               border: 1px solid #c9c9c9;
@@ -1691,12 +1762,14 @@ body{
             padding: 0 60px;
             border-radius: 40px;
             margin-top: 100px;
+            font-family: 'Roboto _GEO Mt';
   				}
   			}
   		}
   	}
   }
   & > .footer{
+    font-family: "Roboto _GEO Mt";
     .partners{
       background-color: #f1f1f1;
       padding-top: 40px;
