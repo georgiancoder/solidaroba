@@ -127,9 +127,23 @@ body{
             visibility: hidden;
             transition: 0.3s;
           }
+          &:hover{
+            ul{
+              display: block;
+            }
+          }
           ul{
             display: none;
             position: absolute;
+            padding-top: 10px;
+            padding-left: 15px;
+            li{
+              width: 120%;
+              color: transparentize(#fff6c6,.6);
+              &:hover{
+                color: #fff6c6;
+              }
+            }
           }
         }
       }
@@ -1767,6 +1781,38 @@ body{
   			}
   		}
   	}
+  }
+  .search{
+    margin: 100px 0;
+    margin-bottom: 0;
+    border-top: 1px solid #cccccc;
+    .title{
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      padding: 0 20px;
+      background-color: #FFF;
+      font-size: 23px;
+      color: #666666;
+    }
+    .wrapper{
+      padding: 50px 200px;
+      font-family: "Roboto _GEO Nus";
+      .found{
+        margin-bottom: 35px;
+        font-size: 15px;
+        color: #3c5266;
+      }
+      .srchpattern{
+        color: #fbba00;
+        text-decoration: underline;
+      }
+      p{
+        font-size: 15px;
+        color: #666666;
+        margin-bottom: 35px;
+      }
+    }
   }
   & > .footer{
     font-family: "Roboto _GEO Mt";

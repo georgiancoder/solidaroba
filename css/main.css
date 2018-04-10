@@ -122,9 +122,18 @@ body > .header {
           -webkit-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
+        body > .header .bot ul.menu > li:hover ul {
+          display: block; }
         body > .header .bot ul.menu > li ul {
           display: none;
-          position: absolute; }
+          position: absolute;
+          padding-top: 10px;
+          padding-left: 15px; }
+          body > .header .bot ul.menu > li ul li {
+            width: 120%;
+            color: rgba(255, 246, 198, 0.4); }
+            body > .header .bot ul.menu > li ul li:hover {
+              color: #fff6c6; }
 
 body > .bigbanner {
   background-image: url("../images/balgi.png");
@@ -1723,6 +1732,35 @@ body .beneficiars {
           border-radius: 40px;
           margin-top: 100px;
           font-family: 'Roboto _GEO Mt'; }
+
+body .search {
+  margin: 100px 0;
+  margin-bottom: 0;
+  border-top: 1px solid #cccccc; }
+  body .search .title {
+    display: inline-block;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0 20px;
+    background-color: #FFF;
+    font-size: 23px;
+    color: #666666; }
+  body .search .wrapper {
+    padding: 50px 200px;
+    font-family: "Roboto _GEO Nus"; }
+    body .search .wrapper .found {
+      margin-bottom: 35px;
+      font-size: 15px;
+      color: #3c5266; }
+    body .search .wrapper .srchpattern {
+      color: #fbba00;
+      text-decoration: underline; }
+    body .search .wrapper p {
+      font-size: 15px;
+      color: #666666;
+      margin-bottom: 35px; }
 
 body > .footer {
   font-family: "Roboto _GEO Mt"; }
