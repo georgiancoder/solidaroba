@@ -781,16 +781,15 @@ body .histories {
 
 body .historyinner {
   margin: 100px 0;
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #cccccc;
+  text-align: center; }
   body .historyinner .title {
     display: inline-block;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     padding: 0 20px;
     background-color: #FFF;
     font-size: 23px;
+    position: relative;
+    top: -15px;
     color: #666666; }
   body .historyinner.popup .wrapper {
     display: none; }
@@ -855,17 +854,15 @@ body .historyinner {
         background-position: center;
         background-size: cover; }
   body .historyinner .wrapper {
-    padding: 0 45px; }
+    padding: 0 45px;
+    text-align: left; }
     body .historyinner .wrapper .back {
       margin-top: 20px;
-      display: inline-block;
-      margin-left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+      display: block;
       font-size: 15px;
       color: #999999;
-      font-family: 'Roboto _GEO Mt'; }
+      font-family: 'Roboto _GEO Mt';
+      text-align: center; }
       body .historyinner .wrapper .back i {
         display: block;
         text-align: center; }

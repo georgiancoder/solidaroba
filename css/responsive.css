@@ -71,6 +71,15 @@
   body > .maifest .wrapper{
     padding: 50px 30px;
   }
+  body .historyinner .popupgalery .controls{
+    width: 100%;
+  }
+  body .historyinner .popupgalery #popupcarousel{
+    width: 100%;
+  }
+  body .historyinner{
+    margin: 50px 0;
+  }
 }
 
 @media (max-width: 1180px){
@@ -202,6 +211,15 @@
   body .reports .wrapper ul.r li{
     width: 100%;
   }
+  body .historyinner .wrapper .content .desc{
+    width: 100%;
+    padding-left: 0;
+  }
+  body .historyinner .wrapper .content .l{
+    margin: auto;
+    margin-top: 20px;
+  }
+
 }
 
 @media (max-width: 768px){

@@ -789,15 +789,8 @@ body{
   .historyinner{
     margin: 100px 0;
     border-top: 1px solid #cccccc;
-    .title{
-      display: inline-block;
-      margin-left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      padding: 0 20px;
-      background-color: #FFF;
-      font-size: 23px;
-      color: #666666;
-    }
+    text-align: center;
+    @include pageTitle();
     &.popup{
       .wrapper{
         display: none;
@@ -867,14 +860,14 @@ body{
     }
     .wrapper{
       padding: 0 45px;
+      text-align: left;
       .back{
         margin-top: 20px;
-        display: inline-block;
-        margin-left: 50%;
-        transform: translateX(-50%);
+        display: block;
         font-size: 15px;
         color: #999999;
         font-family: 'Roboto _GEO Mt';
+        text-align: center;
         i{
           display: block;
           text-align: center;
