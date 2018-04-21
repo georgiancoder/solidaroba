@@ -27,21 +27,17 @@ a {
   color: inherit;
   font-family: inherit; }
 
+.notfloat {
+  position: fixed !important;
+  right: 15px;
+  top: 20px; }
+
 .wrapper {
   width: 1370px;
   margin: auto; }
 
 h2.title {
   font-family: 'Roboto _GEO Mt'; }
-
-.in-view{
-  transform: scale(1)!important;
-}
-
-.ikonka{
-  transition: 1.5s;
-  transform: scale(0);
-}
 
 body > .header {
   height: 170px;
@@ -409,7 +405,8 @@ body > .history {
     font-size: 23px;
     color: #666666; }
   body > .history .wrapper {
-    padding: 65px 0; }
+    padding: 65px 0;
+    text-align: center; }
     body > .history .wrapper ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -441,16 +438,14 @@ body > .history {
       color: #FFF;
       line-height: 35px;
       border-radius: 17px;
-      margin-left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
       margin-top: 60px; }
 
 body > .products {
-  background-color: #434242; }
+  background-color: #434242;
+  overflow: hidden; }
   body > .products .wrapper {
-    padding: 30px 40px; }
+    padding: 30px 40px;
+    text-align: center; }
     body > .products .wrapper h2 {
       font-size: 22px;
       color: #FFF;
@@ -511,10 +506,6 @@ body > .products {
       font-size: 13px;
       color: #FFF;
       border-radius: 17px;
-      margin-left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
       font-family: "Roboto _GEO Mt"; }
 
 body > .forbeneficiars .wrapper {
@@ -581,20 +572,20 @@ body > .forbeneficiars .wrapper {
 
 body .reports {
   margin: 100px 0;
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #cccccc;
+  text-align: center; }
   body .reports .title {
     display: inline-block;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     padding: 0 20px;
     background-color: #FFF;
     font-size: 23px;
+    position: relative;
+    top: -15px;
     color: #666666; }
   body .reports .wrapper {
     padding: 60px 200px;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    text-align: left; }
     body .reports .wrapper ul.r {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -635,7 +626,10 @@ body .reports {
             display: block;
             position: absolute;
             right: -2.5px;
-            top: -3px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
             width: 50px;
             height: 50px;
             background-color: #fbba00;
@@ -654,6 +648,8 @@ body .reports {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       margin-bottom: 30px;
       font-family: 'Roboto _GEO Mt'; }
       body .reports .wrapper ul.years li {
@@ -671,16 +667,15 @@ body .reports {
 body .histories {
   margin: 100px 0;
   border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid #cccccc;
+  text-align: center; }
   body .histories .title {
     display: inline-block;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     padding: 0 20px;
     background-color: #FFF;
     font-size: 23px;
+    position: relative;
+    top: -15px;
     color: #666666; }
   body .histories .wrapper {
     padding: 80px 45px;
@@ -689,7 +684,8 @@ body .histories {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    text-align: left; }
     body .histories .wrapper .h {
       width: 225px;
       margin-bottom: 60px;
@@ -763,10 +759,8 @@ body .histories {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%) translateY(50%);
-    -ms-transform: translateX(-50%) translateY(50%);
-    transform: translateX(-50%) translateY(50%);
+    position: relative;
+    top: 30px;
     background-color: #FFF;
     padding: 0 30px; }
     body .histories .pagination li {

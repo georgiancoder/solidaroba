@@ -105,9 +105,11 @@ if($(window).innerWidth() <= 1024){
 $("#menuBurger").click(function(){
   $("#responsivemenu .allinone").toggleClass('open');
   if($("#responsivemenu .allinone").hasClass('open')){
+    $(this).addClass('notfloat');
     $(this).find('i').removeClass('fa-bars').addClass('fa-times');
   }else{
     $(this).find('i').removeClass('fa-times').addClass('fa-bars');
+    $(this).removeClass('notfloat');
   }
 });
 
