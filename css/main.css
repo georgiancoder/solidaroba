@@ -37,6 +37,90 @@ h2.title {
 body > .header {
   height: 170px;
   background-color: #fbba00; }
+  body > .header #responsivemenu {
+    position: relative;
+    z-index: 23;
+    display: none; }
+    body > .header #responsivemenu #menuBurger {
+      position: relative;
+      z-index: 2; }
+    body > .header #responsivemenu .allinone {
+      padding: 15px;
+      position: fixed;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      top: -100%;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: #fbba00; }
+      body > .header #responsivemenu .allinone.open {
+        top: 0; }
+      body > .header #responsivemenu .allinone .lang {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 14px;
+        color: #a48c12;
+        font-family: "Roboto _GEO Mt"; }
+        body > .header #responsivemenu .allinone .lang li {
+          margin-left: 3px; }
+          body > .header #responsivemenu .allinone .lang li.active, body > .header #responsivemenu .allinone .lang li:hover {
+            color: #333333; }
+      body > .header #responsivemenu .allinone form {
+        width: 260px;
+        position: relative;
+        margin: auto;
+        margin-top: 20px; }
+        body > .header #responsivemenu .allinone form input[type="text"] {
+          height: 36px;
+          padding: 0 18px;
+          font-size: 12px;
+          border-radius: 17px;
+          border: 1px solid #FFF;
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.25);
+          font-family: "Roboto _GEO Mt"; }
+        body > .header #responsivemenu .allinone form button {
+          height: 36px;
+          padding: 0 17px;
+          position: absolute;
+          right: 0;
+          top: 5px;
+          background-color: transparent;
+          color: #3c5266;
+          font-size: 20px; }
+      body > .header #responsivemenu .allinone ul.menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 20px;
+        color: #333333;
+        font-family: "Roboto _GEO Mt"; }
+        body > .header #responsivemenu .allinone ul.menu li {
+          font-size: 18px;
+          margin-bottom: 15px; }
+          body > .header #responsivemenu .allinone ul.menu li i {
+            display: none; }
+          body > .header #responsivemenu .allinone ul.menu li img {
+            display: none; }
+          body > .header #responsivemenu .allinone ul.menu li ul {
+            display: none; }
   body > .header .top {
     padding-top: 13px;
     display: -webkit-box;
@@ -178,6 +262,8 @@ body > .donate {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 0 45px; }
     body > .donate .wrapper form {
       width: 870px;
@@ -187,6 +273,8 @@ body > .donate {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       padding-left: 65px; }
       body > .donate .wrapper form span {
         color: #fbba00;
@@ -1832,9 +1920,11 @@ body > .footer {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       position: relative; }
       body > .footer .info .wrapper .address {
-        width: 530px;
+        width: 460px;
         font-size: 17px;
         color: #FFF;
         position: relative; }
@@ -1847,6 +1937,7 @@ body > .footer {
             left: 0;
             color: #fbba00; }
       body > .footer .info .wrapper ul.menu {
+        width: calc(100% - 500px);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1880,9 +1971,15 @@ body > .footer {
           font-size: 40px; }
   body > .footer .copy {
     background-color: #383838;
-    height: 65px;
-    line-height: 65px; }
+    height: 65px; }
     body > .footer .copy .wrapper {
       padding: 0 40px;
       font-size: 13px;
-      color: #FFF; }
+      color: #FFF;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }

@@ -48,6 +48,90 @@ body{
   & > .header{
     height: 170px;
     background-color: #fbba00;
+    #responsivemenu{
+      position: relative;
+      z-index: 23;
+      display: none;
+      #menuBurger{
+        position: relative;
+        z-index: 2;
+      }
+      .allinone{
+        padding: 15px;
+        position: fixed;
+        transition: 0.3s;
+        top: -100%;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #fbba00;
+        &.open{
+          top: 0;
+        }
+        .lang{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          color: #a48c12;
+          font-family: "Roboto _GEO Mt";
+          li{
+            margin-left: 3px;
+            &.active, &:hover{
+              color: #333333;
+            }
+          }
+        }
+        form{
+          width: 260px;
+          position: relative;
+          margin: auto;
+          margin-top: 20px;
+          input[type="text"]{
+            height: 36px;
+            padding: 0 18px;
+            font-size: 12px;
+            border-radius: 17px;
+            border: 1px solid #FFF;
+            width: 100%;
+            background-color: rgba(255,255,255,0.25);
+            font-family: "Roboto _GEO Mt";
+          }
+          button{
+            height: 36px;
+            padding: 0 17px;
+            position: absolute;
+            right: 0;
+            top: 5px;
+            background-color: transparent;
+            color: #3c5266;
+            font-size: 20px;
+          }
+        }
+        ul.menu{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 20px;
+          color: #333333;
+          font-family: "Roboto _GEO Mt";
+          li{
+            font-size: 18px;
+            margin-bottom: 15px;
+            i{
+              display: none;
+            }
+            img{
+              display: none;
+            }
+            ul{
+              display: none;
+            }
+          }
+        }
+      }
+    }
     .top{
       padding-top: 13px;
       display: flex;
@@ -184,11 +268,13 @@ body{
       height: 100%;
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       padding: 0 45px;
       form{
         width: 870px;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         padding-left: 65px;
         span{
           color: #fbba00;
@@ -1872,9 +1958,10 @@ body{
         padding: 0 50px;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         position: relative;
         .address{
-          width: 530px;
+          width: 460px;
           font-size: 17px;
           color: #FFF;
           position: relative;
@@ -1900,6 +1987,7 @@ body{
           }
         }
         ul.menu{
+          width: calc(100% - 500px);
           display: flex;
           padding: 0 15px;
           li{
@@ -1941,11 +2029,13 @@ body{
     .copy{
       background-color: #383838;
       height: 65px;
-      line-height: 65px;
       .wrapper{
         padding: 0 40px;
         font-size: 13px;
         color: #FFF;
+        height: 100%;
+        display: flex;
+        align-items: center;
       }
     }
   }

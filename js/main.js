@@ -89,4 +89,26 @@ $(".historyinner .controls .next").click(function(){
 $(".historyinner .controls .prev").click(function(){
   $(popupcarousel).trigger('prev.owl.carousel');
 });
+
+
+//responsive goods
+function responsivemenu(){
+  var top = $("body > .header .top").html();
+  var menu = $("body > .header .bot ul.menu");
+  $("#responsivemenu .allinone").append(top).append(menu);
+}
+
+if($(window).innerWidth() <= 1024){
+  responsivemenu();
+}
+
+$("#menuBurger").click(function(){
+  $("#responsivemenu .allinone").toggleClass('open');
+  if($("#responsivemenu .allinone").hasClass('open')){
+    $(this).find('i').removeClass('fa-bars').addClass('fa-times');
+  }else{
+    $(this).find('i').removeClass('fa-times').addClass('fa-bars');
+  }
+});
+
 });
