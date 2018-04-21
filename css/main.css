@@ -34,6 +34,15 @@ a {
 h2.title {
   font-family: 'Roboto _GEO Mt'; }
 
+.in-view{
+  transform: scale(1)!important;
+}
+
+.ikonka{
+  transition: 1.5s;
+  transform: scale(0);
+}
+
 body > .header {
   height: 170px;
   background-color: #fbba00; }
@@ -243,7 +252,7 @@ body > .bigbanner {
       font-size: 207px;
       line-height: 207px;
       color: #434242;
-      font-family: 'Roboto _GEO Mt'; }
+      font-family: 'Pistilli'; }
     body > .bigbanner .wrapper h3 {
       font-size: 71px;
       line-height: 70px;

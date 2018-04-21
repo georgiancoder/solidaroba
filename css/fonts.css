@@ -27,3 +27,11 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+    font-family: 'Pistilli';
+    src: url('../fonts/Pistilli.woff2') format('woff2'),
+        url('../fonts/Pistilli.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
