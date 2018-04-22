@@ -252,6 +252,15 @@
   body .reports{
     margin: 50px 0;
   }
+  body .faq .wrapper{
+    padding: 40px 10px;
+  }
+  body .faq .wrapper ul{
+    width: 100%;
+  }
+  body .faq .wrapper ul li .header{
+    padding-right: 80px;
+  }
 }
 
 @media (max-width: 500px){
@@ -274,5 +283,13 @@
   }
   body > .forbeneficiars .wrapper{
     padding: 30px 10px;
+  }
+  body .faq .wrapper ul li .dropdown{
+    padding: 0 10px;
+  }
+  body .faq .wrapper ul li .header{
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }

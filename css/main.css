@@ -932,19 +932,19 @@ body .historyinner {
 
 body .faq {
   margin: 100px 0;
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #cccccc;
+  text-align: center; }
   body .faq .title {
     display: inline-block;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     padding: 0 20px;
     background-color: #FFF;
     font-size: 23px;
+    position: relative;
+    top: -15px;
     color: #666666; }
   body .faq .wrapper {
-    padding: 80px 0; }
+    padding: 80px 0;
+    text-align: left; }
     body .faq .wrapper ul {
       margin: auto;
       width: 725px;
@@ -958,9 +958,9 @@ body .faq {
           body .faq .wrapper ul li.open .header i {
             background-color: #434242;
             color: #FFF;
-            -webkit-transform: rotate(-180deg);
-            -ms-transform: rotate(-180deg);
-            transform: rotate(-180deg); }
+            -webkit-transform: translateY(-50%) rotate(-180deg);
+            -ms-transform: translateY(-50%) rotate(-180deg);
+            transform: translateY(-50%) rotate(-180deg); }
         body .faq .wrapper ul li .header {
           position: relative;
           width: 100%;
@@ -988,7 +988,10 @@ body .faq {
             border-radius: 50%;
             position: absolute;
             right: 40px;
-            top: 30px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
             text-align: center;
             line-height: 24px;
             -webkit-transition: 0.3s;
