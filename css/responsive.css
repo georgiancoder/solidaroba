@@ -18,6 +18,7 @@
     width: 300px;
   }
   body > .history .wrapper ul{
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   body > .history .wrapper ul li{
@@ -29,6 +30,7 @@
   }
   body .histories .wrapper{
     padding: 40px 10px;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   body .histories .wrapper .h{
@@ -37,6 +39,7 @@
     margin-right: 10px;
   }
   body .production .wrapper .content{
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   body .production .wrapper .content li{
@@ -48,6 +51,7 @@
   }
   body .product .sameproducts .wrapper ul{
     padding: 0 10px;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   body .product .sameproducts .wrapper ul li{
@@ -57,6 +61,31 @@
   }
   body .search .wrapper{
     padding: 30px 20px;
+  }
+  body .beneficiars form .info1 .wrapper{
+    padding: 20px;
+  }
+  body .beneficiars form .info2 .wrapper{
+    padding: 20px;
+  }
+  body .beneficiars form .info2 .wrapper .inputs{
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  body .beneficiars form .info1 .wrapper .inputs{
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  body .beneficiars form .uploads .wrapper .documents{
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  body .beneficiars form .uploads .wrapper .documents li{
+    margin-left: 20px!important;
+    margin-right: 20px!important;
+  }
+  body .beneficiars form .uploads .wrapper{
+    padding: 30px 10px;
   }
 }
 
@@ -121,6 +150,8 @@
   }
   body > .footer .info .wrapper ul.menu{
     width: calc(100% - 50px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   body > .donate .wrapper img{
@@ -128,6 +159,8 @@
   }
   body > .donate .wrapper form{
     width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   body > .maifest .wrapper{
@@ -138,7 +171,11 @@
     height: 500px;
   }
   body > .bigbanner .wrapper{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0 40px;
   }
@@ -169,6 +206,14 @@
   body .reports .wrapper{
     padding: 30px 40px;
   }
+  body .beneficiars form .uploads .wrapper .terms .info{
+    width: 100%;
+  }
+  body .beneficiars form .uploads .wrapper .terms .accept{
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 1024px){
@@ -177,8 +222,14 @@
     height: 80px;
   }
   body > .header .wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   body > .header #responsivemenu{
@@ -208,7 +259,12 @@
     text-align: center;
   }
   body > .donate .wrapper form{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   body > .donate .wrapper form .srch{
@@ -256,6 +312,8 @@
     width: 100%;
   }
   body .donation form .radio{
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
   }
   body .donation form .radio li{
@@ -281,6 +339,8 @@
     margin: auto;
   }
   body > .footer .copy .wrapper{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
   }
@@ -361,6 +421,13 @@
     margin-top: 30px;
     padding-left: 0px;
   }
+  body .beneficiars form .info2 .wrapper .inputs li{
+    width: 100%;
+  }
+  body .beneficiars form .info1 .wrapper .inputs li{
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 500px){

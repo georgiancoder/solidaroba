@@ -1606,16 +1606,10 @@ body{
     margin: 100px 0;
     margin-bottom: 0;
     border-top: 1px solid #cccccc;
-  	.title {
-      display: inline-block;
-      margin-left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      padding: 0 20px;
-      background-color: #FFF;
-      font-size: 23px;
-      color: #666666;
-  	}
+    text-align: center;
+  	@include pageTitle();
   	form {
+      text-align: left;
       margin-top: 40px;
   		.info1 {
   			.wrapper {
@@ -1765,6 +1759,7 @@ body{
             margin-top: 20px;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             text-align: left;
             font-family: 'Roboto _GEO Nus';
   					.info {

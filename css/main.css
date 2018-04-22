@@ -1611,18 +1611,18 @@ body .donation {
 body .beneficiars {
   margin: 100px 0;
   margin-bottom: 0;
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #cccccc;
+  text-align: center; }
   body .beneficiars .title {
     display: inline-block;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     padding: 0 20px;
     background-color: #FFF;
     font-size: 23px;
+    position: relative;
+    top: -15px;
     color: #666666; }
   body .beneficiars form {
+    text-align: left;
     margin-top: 40px; }
     body .beneficiars form .info1 .wrapper {
       padding: 40px; }
@@ -1777,6 +1777,8 @@ body .beneficiars {
           -webkit-box-pack: justify;
           -ms-flex-pack: justify;
           justify-content: space-between;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
           text-align: left;
           font-family: 'Roboto _GEO Nus'; }
           body .beneficiars form .uploads .wrapper .terms .info {
