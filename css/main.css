@@ -1021,19 +1021,19 @@ body .faq {
 body .contact {
   margin: 100px 0;
   margin-bottom: 0;
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #cccccc;
+  text-align: center; }
   body .contact .title {
     display: inline-block;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     padding: 0 20px;
     background-color: #FFF;
     font-size: 23px;
+    position: relative;
+    top: -15px;
     color: #666666; }
   body .contact .wrapper {
-    padding: 40px 0; }
+    padding: 40px 0;
+    text-align: left; }
     body .contact .wrapper form {
       width: 640px;
       margin: auto;
@@ -1098,9 +1098,11 @@ body .contact {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       font-family: 'Roboto _GEO Mt'; }
       body .contact .wrapper ul.address li {
-        margin: 0 25px;
+        margin: 10px 25px;
         font-size: 17px;
         color: #434242; }
         body .contact .wrapper ul.address li i {
