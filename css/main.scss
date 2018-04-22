@@ -1353,15 +1353,8 @@ body{
     margin: 100px 0;
     margin-bottom: 0;
     border-top: 1px solid #cccccc;
-  	.title {
-      display: inline-block;
-      margin-left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      padding: 0 20px;
-      background-color: #FFF;
-      font-size: 23px;
-      color: #666666;
-  	}
+    text-align: center;
+  	@include pageTitle();
   		h3 {
         text-align: center;
         font-size: 23px;
@@ -1371,6 +1364,7 @@ body{
   		}
 
   		form {
+        text-align: left;
         margin-top: 20px;
         .wrapper{
           padding: 0 40px;
@@ -1378,6 +1372,7 @@ body{
   			.radio {
           display: flex;
           justify-content: center;
+          flex-wrap: wrap;
   				li {
             margin: 0 25px;
             font-size: 15px;
@@ -1416,6 +1411,7 @@ body{
           display: flex;
           align-items: center;
           justify-content: center;
+          flex-wrap: wrap;
         }
   			.inputs {
           margin-top: 45px;
@@ -1467,6 +1463,7 @@ body{
           padding-bottom: 80px;
           ul.d{
             display: flex;
+            flex-wrap: wrap;
             margin-bottom: 50px;
             li {
               margin-right: 40px;

@@ -252,6 +252,25 @@
   body .product .wrapper .content .slider{
     margin: auto;
   }
+  body .donation form .terms{
+    width: 100%;
+  }
+  body .donation form .radio{
+    justify-content: flex-start;
+  }
+  body .donation form .radio li{
+    margin-bottom: 15px;
+  }
+  body .donation form .person{
+    height: auto;
+    padding: 20px 0px;
+  }
+  body .donation form .amount ul.d li{
+    margin-bottom: 15px;
+  }
+  body .donation form .wrapper{
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 768px){
@@ -379,5 +398,12 @@
   }
   body .product .wrapper .content .slider #productInnerSlider .item{
     height: 300px;
+  }
+  body .donation form .inputs .input{
+    width: 100%;
+    margin: 10px 0;
+  }
+  body .donation form .inputs .input input{
+    width: 100%;
   }
 }

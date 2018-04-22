@@ -1371,16 +1371,15 @@ body .product {
 body .donation {
   margin: 100px 0;
   margin-bottom: 0;
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #cccccc;
+  text-align: center; }
   body .donation .title {
     display: inline-block;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     padding: 0 20px;
     background-color: #FFF;
     font-size: 23px;
+    position: relative;
+    top: -15px;
     color: #666666; }
   body .donation h3 {
     text-align: center;
@@ -1389,6 +1388,7 @@ body .donation {
     margin-top: 80px;
     font-family: 'Roboto _GEO Mt'; }
   body .donation form {
+    text-align: left;
     margin-top: 20px; }
     body .donation form .wrapper {
       padding: 0 40px; }
@@ -1398,7 +1398,9 @@ body .donation {
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
       body .donation form .radio li {
         margin: 0 25px;
         font-size: 15px;
@@ -1437,7 +1439,9 @@ body .donation {
       align-items: center;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
     body .donation form .inputs {
       margin-top: 45px;
       margin-bottom: 60px;
@@ -1484,6 +1488,8 @@ body .donation {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
         margin-bottom: 50px; }
         body .donation form .amount ul.d li {
           margin-right: 40px; }
