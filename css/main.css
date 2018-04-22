@@ -1183,26 +1183,21 @@ body .production {
 body .product {
   margin: 100px 0;
   margin-bottom: 0;
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #cccccc;
+  text-align: center; }
   body .product .title {
     display: inline-block;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     padding: 0 20px;
     background-color: #FFF;
     font-size: 23px;
+    position: relative;
+    top: -15px;
     color: #666666; }
   body .product .wrapper {
     padding: 0 40px; }
     body .product .wrapper .back {
       margin-top: 20px;
       display: inline-block;
-      margin-left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
       font-size: 15px;
       color: #999999;
       font-family: 'Roboto _GEO Mt'; }
@@ -1213,7 +1208,10 @@ body .product {
       margin-top: 25px;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      text-align: left;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
       body .product .wrapper .content .slider {
         width: 360px; }
         body .product .wrapper .content .slider #productInnerSlider {
@@ -1292,6 +1290,7 @@ body .product {
               width: 135px;
               overflow: hidden;
               margin: 0 3.5px;
+              margin-bottom: 10px;
               height: 77px;
               display: -webkit-box;
               display: -ms-flexbox;
@@ -1309,16 +1308,19 @@ body .product {
               body .product .wrapper .content .desc .buy .markets li:last-child {
                 margin-right: 0px; }
   body .product .sameproducts {
-    margin-top: 160px;
+    margin-top: 150px;
     margin-bottom: 100px;
     border-top: 1px solid #cccccc;
     font-family: 'Roboto _GEO Mt';
     text-align: center; }
     body .product .sameproducts .title {
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      margin-left: auto; }
+      display: inline-block;
+      padding: 0 20px;
+      background-color: #FFF;
+      font-size: 23px;
+      position: relative;
+      top: -15px;
+      color: #666666; }
     body .product .sameproducts .wrapper ul {
       padding: 0 40px;
       display: -webkit-box;

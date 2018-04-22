@@ -1183,22 +1183,13 @@ body{
     margin: 100px 0;
     margin-bottom: 0;
     border-top: 1px solid #cccccc;
-    .title{
-      display: inline-block;
-      margin-left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      padding: 0 20px;
-      background-color: #FFF;
-      font-size: 23px;
-      color: #666666;
-    }
+    text-align: center;
+    @include pageTitle();
     .wrapper{
       padding: 0 40px;
       .back{
         margin-top: 20px;
         display: inline-block;
-        margin-left: 50%;
-        transform: translateX(-50%);
         font-size: 15px;
         color: #999999;
         font-family: 'Roboto _GEO Mt';
@@ -1210,6 +1201,8 @@ body{
       .content{
         margin-top: 25px;
         display: flex;
+        text-align: left;
+        flex-wrap: wrap;
         .slider{
           width: 360px;
           #productInnerSlider{
@@ -1283,6 +1276,7 @@ body{
                 width: 135px;
                 overflow: hidden;
                 margin: 0 3.5px;
+                margin-bottom: 10px;
                 height: 77px;
                 display: flex;
                 align-items: center;
@@ -1302,15 +1296,12 @@ body{
       }
     }
     .sameproducts {
-      margin-top: 160px;
+      margin-top: 150px;
       margin-bottom: 100px;
       border-top: 1px solid #cccccc;
       font-family: 'Roboto _GEO Mt';
       text-align: center;
-      .title{
-        transform: translateY(-50%);
-        margin-left: auto;
-      }
+      @include pageTitle();
         .wrapper {
           ul {
             padding: 0 40px;
