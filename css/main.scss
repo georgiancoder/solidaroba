@@ -1852,18 +1852,12 @@ body{
     margin: 100px 0;
     margin-bottom: 0;
     border-top: 1px solid #cccccc;
-    .title{
-      display: inline-block;
-      margin-left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      padding: 0 20px;
-      background-color: #FFF;
-      font-size: 23px;
-      color: #666666;
-    }
+    text-align: center;
+    @include pageTitle();
     .wrapper{
       padding: 50px 200px;
       font-family: "Roboto _GEO Nus";
+      text-align: left;
       .found{
         margin-bottom: 35px;
         font-size: 15px;
