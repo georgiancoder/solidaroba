@@ -113,6 +113,15 @@ $("#menuBurger").click(function(){
   }
 });
 
+$("#filter").click(function(){
+  $(".production .wrapper .filters .cont").toggleClass('open');
+  if($(".production .wrapper .filters .cont").hasClass('open')){
+    $(this).removeClass('fa-bars').addClass('fa-times');
+  }else{
+    $(this).removeClass('fa-times').addClass('fa-bars');
+  }
+});
+
 var $animation_elements = $('.ikonka');
 var $window = $(window);
 

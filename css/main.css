@@ -1115,25 +1115,29 @@ body .contact {
 body .production {
   margin: 100px 0;
   margin-bottom: 0;
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #cccccc;
+  text-align: center; }
   body .production .title {
     display: inline-block;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     padding: 0 20px;
     background-color: #FFF;
     font-size: 23px;
+    position: relative;
+    top: -15px;
     color: #666666; }
   body .production .wrapper {
     padding: 60px 40px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    text-align: left;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     body .production .wrapper .filters {
       font-family: 'Roboto _GEO Mt';
       width: 160px; }
+      body .production .wrapper .filters i.fa {
+        display: none; }
       body .production .wrapper .filters h3 {
         font-size: 17px;
         color: #666666; }
